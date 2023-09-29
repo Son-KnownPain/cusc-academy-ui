@@ -1,13 +1,14 @@
+import config from "~/config"
 import Aptech from "~/pages/Aptech"
 import Home from "~/pages/Home"
 
 export const publicRoutes = [
     {
-        path: '/',
+        path: config.routes.home,
         component: Home,
     },
     {
-        path: '/aptech',
+        path: config.routes.aptech,
         component: Aptech,
     },
 ]

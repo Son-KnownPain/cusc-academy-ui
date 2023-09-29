@@ -2,7 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-    $primary-color: blue;
+    --primary-color: #fff200;
+    --bold-primary-color: #ffa200;
+    --white-color: #fff;
+    --text-color: #333;
+
+    // Default Layout vars
+    --default-layout-width: 1280px;
+
+    // Header
+    --default-layout-header-height: 90px;
 }
 
 * {
@@ -18,4 +27,15 @@ body {
     font-size: 1.6rem;
     line-height: 1.4;
     text-rendering: optimizeSpeed;
+    margin: 0;
+}
+
+// Custom css for Tippy
+.tippy-box {
+    border-radius: 10px;
+}
+
+.tippy-content {
+    padding: 10px;
+    font-weight: 600;
 }

@@ -1,0 +1,38 @@
+.nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    margin-right: -12px;
+}
+
+.nav-item {
+    &:hover {
+        color: var(--bold-primary-color);
+    }
+
+    &.active {
+        color: var(--bold-primary-color);
+    }
+
+    .icon {
+        margin-right: 4px;
+    }
+
+    .dropdown-icon {
+        margin-left: 4px;
+    }
+
+    display: flex;
+    align-items: center;
+    padding: 4px 12px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--text-color);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 6px;
+    border-color: transparent;
+    transition: all 0.12s linear;
+}
