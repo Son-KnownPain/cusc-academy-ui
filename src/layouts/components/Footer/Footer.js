@@ -6,7 +6,7 @@ import images from '~/asset/images';
 
 const cx = classNames.bind(styles);
 
-function Footers() {
+function Footer() {
     return (
         <footer className={cx('wrapper')}>
             <div class={cx('inner')}>
@@ -67,11 +67,11 @@ function Footers() {
                     </a>
                 </div>
             </div>
-            <div className={cx('copyright')}>
-                <span className={cx('label')}>CUSC APTECH © 2022</span>
-            </div>
+            <p className={cx('copyright')}>
+                © 2023 CUSC Computer Education.
+            </p>
         </footer>
     );
 }
 
-export default Footers;
+export default Footer;
