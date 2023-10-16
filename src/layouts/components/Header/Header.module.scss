@@ -1,4 +1,7 @@
+@import '../../../asset/scss/variables';
+
 $logo-height: 68px;
+$mobile-logo-height: 48px;
 
 #header {
     position: fixed;
@@ -15,28 +18,67 @@ $logo-height: 68px;
 
 .inner {
     width: var(--default-layout-width);
+    max-width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
 
-.logos {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 100%;
-    margin-right: -12px;
-}
+    .logos {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100%;
+        margin-right: -12px;
 
-.logo {
-    height: $logo-height;
+        .logo {
+            height: $logo-height;
 
-    &:not(:first-child) {
-        margin-left: 8px;
+            &:not(:first-child) {
+                margin-left: 8px;
+            }
+
+            img {
+                height: 100%;
+            }
+        }
     }
 
-    img {
-        height: 100%;
+    .bars-icon {
+        display: flex;
+        padding: 12px;
+        background-color: transparent;
+        color: #555;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+/* Mobile and Tablet */
+@media (max-width: #{$tablet-max-width}) {
+    .inner {
+        padding: 0 8px;
+    }
+}
+
+/* Mobile */
+@media (max-width: #{$mobile-max-width}) {
+    #header {
+        height: var(--default-layout-mobile-header-height);
+
+        .logos {
+            .logo {
+                height: $mobile-logo-height;
+
+                &:not(:first-child) {
+                    margin-left: 8px;
+                }
+
+                img {
+                    height: 100%;
+                }
+            }
+        }
     }
 }

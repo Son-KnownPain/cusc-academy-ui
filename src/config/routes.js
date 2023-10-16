@@ -13,4 +13,11 @@ export const externalRoutes = {
     cusc: 'https://aptechcantho.cusc.vn/',
 }
 
+export const eduRoutes = [
+    routes.aptech,
+    routes.arena,
+    routes.acnpro,
+    routes.steam,
+]
+
 export default routes;

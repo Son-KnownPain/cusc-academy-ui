@@ -5,7 +5,7 @@ const cx = classNames.bind(styles);
 
 function Nav({ children }) {
     return (
-        <nav className={cx('nav')}>
+        <nav className={cx('nav', 'hide-on-mobile')}>
             {children}
         </nav>
     );

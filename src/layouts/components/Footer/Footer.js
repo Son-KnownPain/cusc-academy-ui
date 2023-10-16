@@ -9,11 +9,11 @@ const cx = classNames.bind(styles);
 function Footer() {
     return (
         <footer className={cx('wrapper')}>
-            <div class={cx('inner')}>
+            <div className={cx('inner')}>
                 <div className={cx('content')}>
                     <h3 className={cx('title')}>TRUNG TÂM CÔNG NGHỆ PHẦN MỀM ĐẠI HỌC CẦN THƠ</h3>
                     <p className={cx('line')}>
-                        <MapMarkerIcon height="14px " width="14px" />
+                        <MapMarkerIcon className={cx('hide-on-mobile-tablet')} height="14px " width="14px" />
                         Khu III, Đại Học Cần Thơ, 01 Lý Tự Trọng, Q. Ninh Kiều, TP. Cần Thơ
                     </p>
                     <p className={cx('line')}>
@@ -31,7 +31,7 @@ function Footer() {
                     </p>
                     <p className={cx('line')}>
                         <EnvelopeIcon width="14px" height="14px" />
-                        <span className={cx('label')}>Mail:</span>
+                        <span className={cx('label')}>Email:</span>
                         <a href="mailto:tuyensinh@cusc.ctu.edu.vn?subject=Tuyển sinh" className={cx('text-link')}>
                             tuyensinh@cusc.ctu.edu.vn
                         </a>
@@ -62,7 +62,7 @@ function Footer() {
                     >
                         <img className={cx('social-img')} src={images.socials.instagram} alt="instagram" />
                     </a>
-                    <a target="_blank" rel="noreferrer" href="https://aptech.cusc.vn/" className={cx('social-item')}>
+                    <a target="_blank" rel="noreferrer" href="https://zalo.vn/" className={cx('social-item')}>
                         <img className={cx('social-img')} src={images.socials.zalo} alt="zalo" />
                     </a>
                 </div>

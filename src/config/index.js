@@ -1,8 +1,9 @@
-import routes, { externalRoutes } from "./routes";
+import routes, { externalRoutes, eduRoutes } from "./routes";
 
 const config = {
     routes,
-    externalRoutes
+    externalRoutes,
+    eduRoutes
 };
 
 export default config;
