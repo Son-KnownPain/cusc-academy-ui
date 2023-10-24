@@ -32,6 +32,11 @@ body {
     margin: 0;
 }
 
+*::selection {
+    background-color: var(--primary-color);
+    color: #000;
+}
+
 button:active,
 a:active,
 div:active {
