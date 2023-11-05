@@ -74,7 +74,7 @@
 /* Mobile and Tablet */
 @media (max-width: #{$tablet-max-width}) {
     .wrapper {
-        padding: 0 12px;
+        padding: 20px 12px 0 12px;
 
         .title {
             font-size: 2rem;

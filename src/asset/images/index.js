@@ -12,6 +12,19 @@ const images = {
         instagram: require('~/asset/images/socials/instagram.avif'),
         zalo: require('~/asset/images/socials/zalo.jpg'),
     },
+
+    whyChooseAptech: {
+        update: require('~/asset/images/why-choose-aptech-icons/update.jpg'),
+        globe: require('~/asset/images/why-choose-aptech-icons/globe.png'),
+        book: require('~/asset/images/why-choose-aptech-icons/book.jpg'),
+        board: require('~/asset/images/why-choose-aptech-icons/board.jpg'),
+        lecturer: require('~/asset/images/why-choose-aptech-icons/lecturer.png'),
+        house: require('~/asset/images/why-choose-aptech-icons/house.png'),
+    },
+
+    other: {
+        adseDegree: require('~/asset/images/other/ADSE-degree.png'),
+    }
 };
 
 export default images;

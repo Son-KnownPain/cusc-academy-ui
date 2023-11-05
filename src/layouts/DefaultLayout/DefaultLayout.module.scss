@@ -12,6 +12,13 @@
     margin-top: var(--default-layout-header-height);
 }
 
+/* Mobile and Tablet */
+@media (max-width: #{$tablet-max-width}) {
+    .content {
+        padding: 0 6px;
+    }
+}
+
 /* Mobile */
 @media (max-width: #{$mobile-max-width}) {
     .content {

@@ -1,0 +1,42 @@
+.wrapper {
+    margin: 48px 0;
+
+    .container {
+        margin-top: -20px;
+    }
+
+    .item {
+        position: relative;
+        padding: 24px;
+        margin-top: 68px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 8px #99999966;
+        height: 232px;
+        transition: box-shadow 0.3s linear;
+
+        &:hover {
+            box-shadow: 0 0 16px #bca60099;
+        }
+
+        .icon-box {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: -42px;
+
+            .image-icon {
+                width: 100px;
+                background-color: #fff;
+            }
+        }
+
+        .text {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: #333;
+            text-align: justify;
+            margin: 60px 0 0;
+        }
+    }
+}

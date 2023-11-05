@@ -1,0 +1,42 @@
+.wrapper {
+    margin: 66px 0;
+
+    .header {
+        .title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #111;
+            text-align: center;
+            position: relative;
+
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 260px;
+                height: 3px;
+                background-color: var(--bold-primary-color);
+                bottom: -12px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            &.medium::after {
+                width: 400px;
+            }
+        }
+
+        .desc {
+            font-size: 1.5rem;
+            font-weight: 400;
+            font-style: italic;
+            text-align: center;
+            color: #555;
+            margin-top: 36px;
+        }
+    }
+
+    .content {
+        margin-top: 50px;
+    }
+}

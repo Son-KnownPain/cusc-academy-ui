@@ -1,0 +1,77 @@
+@import '../../../../asset/scss/variables';
+
+.course-item {
+    margin-bottom: 24px;
+}
+
+.logo {
+    height: 60px;
+}
+
+.name {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000;
+    margin-left: 8px;
+    text-decoration: none;
+
+    &:hover {
+        color: var(--bold-primary-color);
+    }
+}
+
+.description {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #333;
+    margin-top: 16px;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: flex-end;
+
+    .btn {
+        padding: 6px 12px;
+        margin-top: 12px;
+        font-size: 1.4rem;
+        font-weight: 400;
+        text-align: center;
+        background-color: var(--primary-color);
+        color: #000;
+        border: 2px solid var(--bold-primary-color);
+        border-radius: 30px;
+        text-decoration: none;
+        transition: all 0.12s linear;
+        box-shadow: 0 0 7px #99999966;
+
+        &:hover {
+            background-color: var(--bold-primary-color);
+            color: #fff;
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width: #{$mobile-max-width}) {
+    .logo-wrapper {
+        justify-content: center;
+    }
+
+    .name {
+        margin-top: 16px;
+        text-align: center;
+    }
+
+    .description {
+        padding: 0 12px;
+    }
+
+    .btn-wrapper {
+        margin-top: 16px;
+
+        .btn {
+            margin-right: 6px;
+        }
+    }
+}
