@@ -6,6 +6,7 @@ const routes = {
     steam: '/steam',
     introduction: '/introduction',
     contact: '/contact',
+    enrollment: '/enrollment',
 };
 
 export const externalRoutes = {
