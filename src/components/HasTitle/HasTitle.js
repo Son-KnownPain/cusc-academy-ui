@@ -8,7 +8,7 @@ const cx = classNames.bind(styles);
  *
  * @param {ReactNode} props.children - Các thành phần con được chứa bên trong HasTitle.
  * @param {string} [props.title='Default Title'] - Tiêu đề của HasTitle, mặc định là 'Default Title'.
- * @param {string} [props.desc=''] - Mô tả của HasTitle, mặc định là chuỗi rỗng.
+ * @param {string | node} [props.desc=''] - Mô tả của HasTitle, mặc định là chuỗi rỗng.
  * @returns {ReactElement} - Một đối tượng ReactElement chứa tiêu đề, mô tả và các thành phần con.
  */
 function HasTitle({ children, title = 'Default Title', desc = '' }) {

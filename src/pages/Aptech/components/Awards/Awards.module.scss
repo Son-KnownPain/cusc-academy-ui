@@ -1,0 +1,36 @@
+.wrapper {
+    margin: 48px 0;
+
+    .cups-content {
+        margin-top: 60px;
+    }
+
+    .slide-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .name {
+            font-size: 1.8rem;
+            font-weight: 500;
+            color: #a52a2a;
+            margin-top: 32px;
+        }
+
+        .year {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #444;
+            margin-top: 10px;
+        }
+
+        .description {
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: #000;
+            margin-top: 10px;
+            font-style: italic;
+        }
+    }
+}

@@ -1,5 +1,6 @@
 import routes, { externalRoutes, eduRoutes } from "./routes";
 import { courses, registerLinks } from './courses';
+import responsive from "./responsive";
 
 const config = {
     routes,
@@ -7,6 +8,7 @@ const config = {
     eduRoutes,
     courses,
     registerLinks,
+    responsive,
 };
 
 export default config;

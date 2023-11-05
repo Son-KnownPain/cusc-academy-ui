@@ -23,7 +23,7 @@ function Slogan() {
             setSlogans(data.map(x => { return { image: getExportView(x.hinh_anh) } }));
         };
         fetchData();
-    }, [])
+    }, []);
 
     return (
         <div className={cx('wrapper')}>
