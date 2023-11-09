@@ -1,3 +1,5 @@
+@import '../../../../asset/scss/variables';
+
 .wrapper {
     margin: 48px 0;
 
@@ -87,6 +89,18 @@
             p {
                 font-size: 1.6rem;
                 font-weight: 600;
+            }
+        }
+    }
+}
+
+/* Mobile and Tablet */
+@media (max-width: #{$tablet-max-width}) {
+    .wrapper {
+        .tab-content {
+            .target {
+                margin-top: 16px;
+                padding: 12px;
             }
         }
     }
