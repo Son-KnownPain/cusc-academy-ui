@@ -97,7 +97,21 @@
 /* Mobile and Tablet */
 @media (max-width: #{$tablet-max-width}) {
     .wrapper {
+        .tab-list {
+            .tab {
+                font-size: 1.4rem;
+            }
+        }
+
         .tab-content {
+            .desc {
+                font-size: 1.5rem;
+                font-weight: 400;
+                color: #444;
+                margin-top: 20px;
+                padding: 8px;
+            }
+
             .target {
                 margin-top: 16px;
                 padding: 12px;

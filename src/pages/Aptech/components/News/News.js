@@ -54,7 +54,7 @@ function News() {
                         <div className="row">
                             {
                                 news.slice(0, showedQuantity).map((n, index) => (
-                                    <div key={index} className="col-xl-4">
+                                    <div key={index} className="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                                         <div className={cx('card-item')} onClick={handleClickItem(n)}>
                                             <div className={cx('img-wrapper')}>
                                                 <img className={cx('thumbnail')} src={n.thumbnail} alt="News" />

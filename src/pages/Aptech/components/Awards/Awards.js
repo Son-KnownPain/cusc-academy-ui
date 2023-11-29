@@ -8,6 +8,7 @@ import Loader from "~/components/Loader";
 import SlideDotsAndChange from "~/components/SlideDotsAndChange";
 import { awardsData, awardsImages } from "~/services/aptechService";
 import { getExportView } from "~/utils/drive";
+import config from "~/config";
 
 const cx = classNames.bind(styles);
 
@@ -81,6 +82,17 @@ function Awards() {
                                 slidesToScroll: 1,
                                 autoplay: true,
                                 autoplaySpeed: 8000,
+                                responsive: [
+                                    {
+                                        breakpoint: config.responsive.underTablet,
+                                        settings: {
+                                            slidesToShow: 1,
+                                            slidesToScroll: 1,
+                                            infinite: true,
+                                            dots: true
+                                        }
+                                    },
+                                ],
                             }} ref={sliderRef}>
                                 {
                                     images.map((s, index) => (

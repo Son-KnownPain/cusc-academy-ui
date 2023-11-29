@@ -1,3 +1,5 @@
+@import '../../../../asset/scss/variables';
+
 .wrapper {
     display: flex;
     align-items: center;
@@ -6,5 +8,14 @@
 
     .content {
         width: 65%;
+    }
+}
+
+/* Mobile and Tablet */
+@media (max-width: #{$tablet-max-width}) {
+    .wrapper {
+        .content {
+            width: 90%;
+        }
     }
 }
