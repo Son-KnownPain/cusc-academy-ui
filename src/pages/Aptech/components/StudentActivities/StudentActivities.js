@@ -52,7 +52,7 @@ function StudentActivities() {
                     <div className={cx('content')}>
                         <div className="row">
                             {images.slice(0, showedQuantity).map((item, index) => (
-                                <div key={index} className="col-xl-4">
+                                <div key={index} className="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
                                     <Tippy placement="bottom" content="Bấm vào để xem" >
                                         <div onClick={handleClickItem(item.image)} className={cx('image-item')}>
                                             <img className={cx('img')} src={item.image} alt={'StudentActivity'} />

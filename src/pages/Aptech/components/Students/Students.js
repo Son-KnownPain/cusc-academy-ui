@@ -8,6 +8,7 @@ import { getExportView } from "~/utils/drive";
 import Loader from "~/components/Loader";
 import Slider from "react-slick";
 import SlideDotsAndChange from "~/components/SlideDotsAndChange";
+import config from "~/config";
 
 const cx = classNames.bind(styles);
 
@@ -45,6 +46,15 @@ function Students() {
                                 slidesToScroll: 1,
                                 autoplay: true,
                                 autoplaySpeed: 8000,
+                                responsive: [
+                                    {
+                                        breakpoint: config.responsive.underTablet,
+                                        settings: {
+                                            slidesToShow: 1,
+                                            slidesToScroll: 1,
+                                        }
+                                    }
+                                ]
                             }} ref={sliderRef}>
                                 {
                                     students.map((s, index) => (
