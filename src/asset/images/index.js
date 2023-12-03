@@ -22,6 +22,15 @@ const images = {
         house: require('~/asset/images/why-choose-aptech-icons/house.png'),
     },
 
+    whyChooseArena: {
+        update: require('~/asset/images/why-choose-aptech-icons/update.jpg'),
+        globe: require('~/asset/images/why-choose-aptech-icons/globe.png'),
+        book: require('~/asset/images/why-choose-aptech-icons/book.jpg'),
+        board: require('~/asset/images/why-choose-aptech-icons/board.jpg'),
+        lecturer: require('~/asset/images/why-choose-aptech-icons/lecturer.png'),
+        time: require('~/asset/images/why-choose-arena-icons/time.png'),
+    },
+
     other: {
         adseDegree: require('~/asset/images/other/ADSE-degree.png'),
     }

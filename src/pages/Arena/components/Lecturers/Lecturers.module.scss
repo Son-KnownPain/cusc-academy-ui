@@ -1,0 +1,62 @@
+.wrapper {
+    margin: 48px 0;
+
+    .item {
+        height: 310px;
+
+        .img-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        .img {
+            width: 183px;
+            height: 245px;
+            object-fit: cover;
+            transition: height 0.3s linear;
+        }
+
+        .name {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 16px;
+            transition: all 0.3s linear;
+        }
+
+        .summary {
+            text-align: center;
+            font-size: 1.6rem;
+            font-weight: 400;
+            font-style: italic;
+            color: #333;
+            transition: all 0.3s linear;
+        }
+
+        .detail-wrapper {
+            display: none;
+            align-items: flex-end;
+            flex: 1;
+        }
+
+        .detail {
+            text-align: center;
+            font-size: 1.6rem;
+            font-weight: 400;
+            font-style: italic;
+            color: #333;
+        }
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

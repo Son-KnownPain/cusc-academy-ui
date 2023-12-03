@@ -1,0 +1,67 @@
+@import '../../../../asset/scss/variables';
+
+.wrapper {
+    margin-top: 24px;
+
+    .tabs {
+        width: 100%;
+    }
+
+    .tab-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0;
+        background-color: #f8f8f8;
+        border-radius: 8px;
+        margin-bottom: 24px;
+
+        .tab {
+            display: inline-block;
+            padding: 20px 32px;
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #444;
+            list-style-type: none;
+            user-select: none;
+            cursor: pointer;
+            transition: color 0.15s linear;
+            outline: none;
+
+            &:hover {
+                color: var(--bold-primary-color);
+            }
+
+            &.tab-selected {
+                background-color: var(--primary-color);
+                color: #000;
+            }
+        }
+    }
+
+    .tab-panel {
+        display: block;
+        margin-top: 32px;
+    }
+
+    .item-img {
+        margin-top: 12px;
+    }
+
+    .loading-text {
+        text-align: center;
+    }
+}
+
+/* Mobile and Tablet */
+@media (max-width: #{$tablet-max-width}) {
+    .wrapper {
+        .tab-list {
+            .tab {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
