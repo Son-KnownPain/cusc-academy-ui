@@ -41,7 +41,7 @@ function TrainingAndEnrollment() {
                         {trainings.map((t, index) => (
                             <TabPanel selectedClassName={cx('tab-panel')} key={index}>
                                 <div className={cx('tab-content')}>
-                                    <ImgWithLoader width="75%" src={getExportView(t?.content || '')} alt="Content" notLoadedRender={(<h2>Xin vui lòng đợi trong giây lát!</h2>)} />
+                                    <ImgWithLoader imgClassName={cx('img')} src={getExportView(t?.content || '')} alt="Content" notLoadedRender={(<h2>Xin vui lòng đợi trong giây lát!</h2>)} />
                                 </div>
                             </TabPanel>
                         ))}
